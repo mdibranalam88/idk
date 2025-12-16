@@ -1,8 +1,9 @@
 
 import './App.css'
+import AgentChat from './components/AgentChat'
 
 function App() {
- const agentId = "agent_8801kagtss1aefgb7k53679zjrwb";
+
 
   return (
     <>
@@ -13,3 +14,4 @@ function App() {
 }
 
 export default App
+
