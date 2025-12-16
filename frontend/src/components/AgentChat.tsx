@@ -85,7 +85,10 @@ const MultiAgentChat: React.FC = () => {
         try {
           await conversation.startSession({
             agentId: targetAgent.agent_id,
-            userId: "Sandeep",
+            userId: "Sandeep123",
+            dynamicVariables:{
+          user_id :"sandeep12349889685"
+        },
             connectionType: "webrtc",
           });
 
@@ -115,6 +118,9 @@ const MultiAgentChat: React.FC = () => {
       await conversation.startSession({
         agentId: agentList[0].agent_id,
         userId: "Sandeep123",
+        dynamicVariables:{
+          user_id :"sandeep12349889685"
+        },
         connectionType: "webrtc",
       });
     } catch (err) {
@@ -213,4 +219,3 @@ const MultiAgentChat: React.FC = () => {
 };
 
 export default MultiAgentChat;
-
