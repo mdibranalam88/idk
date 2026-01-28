@@ -5,12 +5,12 @@ services:
     build: ./backend
     container_name: idk-backend
     ports:
-      - "5000:5000"
+      - "5000:3000"   #Isse host ka 5000 container ke 3000 se jud jayega
 
   frontend:
     build: ./frontend
     container_name: idk-frontend
     ports:
-      - "5000:3000"
+      - "3000:80"
     depends_on:
       - backend
