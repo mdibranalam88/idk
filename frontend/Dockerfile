@@ -1,5 +1,5 @@
 # Build React App
-FROM node:18 as build
+FROM node:20-alpine AS build
 
 WORKDIR /app
 
